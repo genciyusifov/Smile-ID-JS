@@ -1,11 +1,11 @@
 const video = document.getElementById("video");
 
 Promise.all([
-  console.log(faceapi.nets.tinyFaceDetector.loadFromUri("/models")),
-  faceapi.nets.tinyFaceDetector.loadFromUri("/models"),
-  faceapi.nets.faceLandmark68Net.loadFromUri("/models"),
-  faceapi.nets.faceRecognitionNet.loadFromUri("/models"),
-  faceapi.nets.faceExpressionNet.loadFromUri("/models")
+  console.log(faceapi.nets.tinyFaceDetector.loadFromUri("/Smile-ID-JS/models")),
+  faceapi.nets.tinyFaceDetector.loadFromUri("/Smile-ID-JS/models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("/Smile-ID-JS/models"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("/Smile-ID-JS/models"),
+  faceapi.nets.faceExpressionNet.loadFromUri("/Smile-ID-JS/models")
 ]).then(startCamera());
 
 function startCamera() {
